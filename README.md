@@ -17,10 +17,4 @@
 - AI Integration: OpenAI + Serper/DuckDuckGo API
 - Email Service: Mailgun (via Firebase Functions)
 
-## 📦 Getting Started (Local)
 
-```bash
-git clone https://github.com/YOUR_USERNAME/pricepilot.git
-cd pricepilot
-npm install
-npm run dev
