@@ -1,14 +1,16 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
   const [input, setInput] = useState('');
+  const router = useRouter();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('User input:', input);
-    // Future: Send input to API for product detection
+    if (!input.trim()) return;
+    router.push(`/confirm?q=${encodeURIComponent(input.trim())}`);
   };
 
   return (
