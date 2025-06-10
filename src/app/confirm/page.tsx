@@ -4,6 +4,7 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import React from 'react';
 
 export const dynamic = 'force-dynamic'; // 强制动态渲染，防止预渲染报错
+export const runtime = 'edge'; // 指定运行时为 edge，确保不参与 server 构建
 
 export default function ConfirmPage() {
   const searchParams = useSearchParams();
