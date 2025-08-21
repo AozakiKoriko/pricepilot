@@ -1,9 +1,9 @@
 import logging
 from typing import Optional
 from bs4 import BeautifulSoup
-from app.extract.base import BaseExtractor
-from app.models import ProductData
-from app.utils import extract_price, extract_currency, determine_stock_status, clean_text
+from .base import BaseExtractor
+from ..models import ProductData
+from ..utils import extract_price, extract_currency, determine_stock_status, clean_text
 
 logger = logging.getLogger(__name__)
 

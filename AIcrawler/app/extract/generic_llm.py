@@ -13,10 +13,10 @@ except ImportError:
     logger.warning("OpenAI not available, LLM extraction will not work")
 
 from bs4 import BeautifulSoup
-from app.extract.base import BaseExtractor, ExtractionResult
-from app.models import ProductData
-from app.config import settings, get_llm_api_key
-from app.utils import extract_price, extract_currency, determine_stock_status, clean_text
+from .base import BaseExtractor, ExtractionResult
+from ..models import ProductData
+from ..config import settings, get_llm_api_key
+from ..utils import extract_price, extract_currency, determine_stock_status, clean_text
 
 
 class GenericLLMExtractor(BaseExtractor):

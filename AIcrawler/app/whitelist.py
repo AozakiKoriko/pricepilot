@@ -12,9 +12,9 @@ except ImportError:
     OPENAI_AVAILABLE = False
     logger.warning("OpenAI not available, using fallback channels only")
 
-from app.config import settings, get_llm_api_key
-from app.models import ChannelInfo
-from app.cache import cache
+from .config import settings, get_llm_api_key
+from .models import ChannelInfo
+from .cache import cache
 
 
 class WhitelistGenerator:

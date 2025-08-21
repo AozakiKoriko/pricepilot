@@ -3,8 +3,8 @@ import asyncio
 from typing import List, Dict, Any, Optional
 import httpx
 from urllib.parse import quote_plus
-from app.config import settings, get_search_api_key
-from app.models import ChannelInfo
+from .config import settings, get_search_api_key
+from .models import ChannelInfo
 
 logger = logging.getLogger(__name__)
 

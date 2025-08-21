@@ -15,7 +15,7 @@ except ImportError:
     REDIS_AVAILABLE = False
     logger.warning("Redis not available, using SQLite only")
 
-from app.config import settings
+from .config import settings
 
 
 class Cache:

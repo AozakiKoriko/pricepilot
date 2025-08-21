@@ -14,8 +14,8 @@ except ImportError:
     logger.warning("Playwright not available, browser-based fetching will not work")
 
 from urllib.parse import urljoin, urlparse
-from app.config import settings
-from app.utils import extract_domain
+from .config import settings
+from .utils import extract_domain
 
 
 class PageFetcher:

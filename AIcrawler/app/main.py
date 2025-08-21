@@ -5,19 +5,19 @@ from fastapi import FastAPI, HTTPException, Query, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from app.config import settings
-from app.models import (
+from .config import settings
+from .models import (
     SearchRequest, SearchResponse, HealthResponse, 
     ErrorResponse, ProductData, ChannelInfo
 )
-from app.whitelist import WhitelistGenerator
-from app.search import SearchEngine
-from app.fetcher import PageFetcher
-from app.normalize import DataNormalizer
-from app.extract.generic_llm import GenericLLMExtractor
-from app.extract.amazon import AmazonExtractor
-from app.cache import cache, start_cache_cleanup
-from app.utils import extract_domain
+from .whitelist import WhitelistGenerator
+from .search import SearchEngine
+from .fetcher import PageFetcher
+from .normalize import DataNormalizer
+from .extract.generic_llm import GenericLLMExtractor
+from .extract.amazon import AmazonExtractor
+from .cache import cache, start_cache_cleanup
+from .utils import extract_domain
 
 # Configure logging
 logging.basicConfig(

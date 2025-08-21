@@ -1,7 +1,7 @@
 import logging
 from typing import List, Dict, Any, Optional
-from app.models import ProductData
-from app.utils import extract_price, extract_currency, determine_stock_status, clean_text, deduplicate_products
+from .models import ProductData
+from .utils import extract_price, extract_currency, determine_stock_status, clean_text, deduplicate_products
 
 logger = logging.getLogger(__name__)
 
